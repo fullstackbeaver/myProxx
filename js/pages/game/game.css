@@ -1,0 +1,32 @@
+body.game section, body.gameOver section, body.win section{
+	flex-wrap: wrap;
+	width: calc(var(--nColumns) * ( var(--squareSize) + 1rem ));
+	height: calc(var(--rows) * ( var(--squareSize) + 1rem ));
+	justify-content : space-around;
+}
+
+body.gameOver .message, body.win .message{
+	position: absolute;
+	left: -calc( var(--nRows) / 2 * var(--squareSize) );
+	color: antiquewhite;
+	text-shadow: 1px 1px 0px #6e6e6e,
+	  2px 2px 0px #6e6e6e,
+	  3px 3px 0px #6e6e6e;
+}
+
+body.gameOver .message button, body.win .message button{
+	background-color: white;
+	border-radius: .5rem;
+	box-sizing: content-box;
+	display: block;
+	width: auto;
+	margin: auto;
+	padding: 1rem;
+	color: #6e6e6e;
+	box-shadow: 1px 1px 0px #6e6e6e,
+	  2px 2px 0px #6e6e6e,
+	  3px 3px 0px #6e6e6e,
+	  4px 4px 0px #6e6e6e,
+	  5px 5px 0px #6e6e6e,
+	  6px 6px 0px #6e6e6e;
+}

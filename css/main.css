@@ -1,0 +1,79 @@
+/*@import "https://fonts.googleapis.com/css?family=Roboto+Mono:300,700";*/
+
+
+@font-face {
+font-family: 'miratrix';
+src: url('/font/Miratrix-Normal.otf');
+font-weight: normal;
+font-style: normal;
+}
+
+:root{
+	--squareSize : 3rem;
+	--nRows      : 20;
+	--nColumns   : 20;
+}
+
+body {
+	margin: 0;
+}
+
+page {
+	font-family       : 'miratrix';
+	display           : flex;
+	align-items       : center;
+	justify-content   : center;
+	height            : 100vh;
+	margin            : 0;
+	padding           : 0;
+	background        : linear-gradient(270deg, #ed174c, #d269a9, #0076c0, #00b6b9, #72c057,#ed174c);
+	background-size   : 2000% 2000%;
+	-webkit-animation : moveGradient 30s ease infinite;
+	-moz-animation    : moveGradient 30s ease infinite;
+	-o-animation      : moveGradient 30s ease infinite;
+	animation         : moveGradient 30s ease infinite;
+}
+
+section {
+	display: flex;
+}
+
+h1 {
+    letter-spacing: .2rem;
+}
+
+button{
+	border           : 1px solid #FFF;
+	box-sizing       : border-box;
+	display          : flex;
+	justify-content  : center;
+	align-items      : center;
+	margin-top       : 1.5rem;
+	border-radius    : 50%;
+	color            : white;
+	width            : 3rem;
+	height           : 3rem;
+	background-color : transparent;
+	cursor           : pointer;
+}
+
+@keyframes moveGradient { 
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@-webkit-keyframes moveGradient {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@-moz-keyframes moveGradient {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@-o-keyframes moveGradient {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}

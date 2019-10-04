@@ -1,0 +1,38 @@
+section div{
+	flex-basis         : var(--squareSize);
+	width              : var(--squareSize);
+	height             : var(--squareSize);
+	border             : 1px solid #FFF;
+	box-sizing         : border-box;
+	display            : flex;
+	justify-content    : center;
+	align-items        : center;
+	margin             : .5rem;
+	border-radius      : 20%;
+	color              : white;
+	cursor             : pointer;
+	-webkit-transition : border-radius .2s;
+	transition         : border-radius .2s;
+}
+
+section div.done{
+	border-radius : 50%;
+	font-weight   : bold;
+	cursor        : default;
+}
+section div.empty{
+	background-color : transparent; 
+	cursor           : default;
+}
+
+section div.flag{
+	background-color : rgba(255,255,255,.2);
+	border           : 1px dashed;
+	border-radius    : 40%;
+	font-weight      : bold;
+}
+
+body.gameOver section div.bomb{
+	font-size        :2rem;
+	background-color : rgba(255,0,0,.2);
+}
