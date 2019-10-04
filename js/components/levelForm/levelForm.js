@@ -5,8 +5,8 @@ class LevelForm{
     return `
       <select name="levelFormSelect">
         <option value="10*10|10">easy</option>
-        <option value="20*20|20">medium</option>
-        <option value="30*30|30">hard</option>
+        <option value="20*20|20" disabled>medium</option>
+        <option value="30*30|30" disabled>hard</option>
       </select>
       <button onclick="
         pFront.getFormValues({
